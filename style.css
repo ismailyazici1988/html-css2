@@ -1,62 +1,80 @@
-body{
-    margin:0;
-    padding: 0;
-    background-image: url(whitesmoke.png);
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(whitesmoke.png);
+  background-size: cover;
 }
-.main-container{
-    display: flex;
-}
-
-.card-container{
-    display: flex;
-    padding: 20px;
-    margin-left: 100px;
-    margin-right: 50px;
-    width: 100%;
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.left-container{
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 80px;
+  width: 700px;
+  background-color: #fff;
+  border: 3px solid #222;
+  border-radius: 10px;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-right: 4px solid gray;
+  padding-right: 50px;
+  height: 350px;
+}
+.right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text-container {
+  display: block;
+  font-weight: bold;
+}
+.button {
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+}
+.button:hover {
+  background-color: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.social-media {
+  display: flex;
+  gap: 20px;
+  font-size: 30px;
+}
+
+.input-area {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 420px;
-    height: 80vh;
-    border-right: 1px solig gray;
-    margin-left: 50px;
 }
-.right-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    width: 40%;
-}
-.text-container{
-    display: block;
-    font-weight: bold;
-   
-}
-.button{
-    background-color: crimson;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    text-align: center;
-    width: 150px;
-    height: 40px;
-    cursor: pointer;
-    transition: color 0.4s linear;
-}
-.button:hover{
-    background-color:none;
-    color:white;
-    font-size:17px;
-    font-weight: bold;
-}
-.social-media{
-  display:flex;
-   
+
+.input-area input{
+border-radius: 10px;
+border-style: none;
+outline: 1px solid rgba(34, 34, 34, 0.295);
+padding: 10px;
 }
