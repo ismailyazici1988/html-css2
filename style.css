@@ -2,17 +2,25 @@ body{
     margin:0;
     padding: 0;
     background-image: url(whitesmoke.png);
+    background-size: cover;
 }
 .main-container{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .card-container{
     display: flex;
-    padding: 20px;
-    margin-left: 100px;
-    margin-right: 50px;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap:80px;
+    width: 700px;
+    background-color: #fff;
+    border: 3px solid #222;
+    border-radius: 10px;
 }
 
 .left-container{
@@ -21,18 +29,15 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 420px;
-    height: 80vh;
-    border-right: 1px solig gray;
-    margin-left: 50px;
+    border-right: 4px solid gray;
+    padding-right: 50px;
+    height: 350px;
 }
 .right-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     justify-content: center;
-    width: 40%;
 }
 .text-container{
     display: block;
@@ -53,10 +58,21 @@ body{
 .button:hover{
     background-color:none;
     color:white;
-    font-size:17px;
+    font-size:14px;
     font-weight: bold;
 }
 .social-media{
   display:flex;
-   
+  gap: 20px;
+  font-size: 30px;   
+}
+.input-area{
+    display: flex;
+    flex-direction: column;
+}
+.input-area input{
+    border-radius: 10px;
+    border-style: none;
+    outline: 1px solid rgba(34,34,34,0.295);
+    padding: 10px;
 }
